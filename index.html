@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST COUNTRY</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="main" id="darkMode">
+      <div class="container">
+        <div class="flex" id="where">
+          <h2>Where in the world?</h2>
+          <p>
+            <i class="fa-regular fa-moon" onclick="dark()"></i>
+            Dark Mode
+          </p>
+        </div>
+
+        <div class="Search flex">
+          <!-- <p class="backBtn" id="backBtn">
+            <i class="fa-solid fa-arrow-left-long"></i> Back
+          </p> -->
+          <div class="searchIcon flex" id="searchIcon">
+            <i class="fa fa-search" aria-hidden="true" id="searchBtn"></i>
+            <input
+              id="searchInput"
+              class="searchInput"
+              type="search"
+              value=""
+            />
+          </div>
+
+          <!-- <input type="text" placeholder="Filter by region" /> -->
+          <!-- <label for="region">Filter by region</label> -->
+          <select name="region" id="region" class="region">
+            <option disabled selected value="Filter" id="filter">
+              Filter by Region
+            </option>
+            <option value="africa">Africa</option>
+            <option value="america">Americas</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </div>
+
+        <!-- <div>
+         
+        </div> -->
+
+        <div class="images" id="countryContainer">
+          <!-- <img width="350px" id="image" src="" alt="Flag" /> -->
+        </div>
+
+        <div id="countries2">
+          <!-- <img width="350px" id="image" src="" alt="Flag" /> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
