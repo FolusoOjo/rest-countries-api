@@ -240,6 +240,9 @@ img {
   .flag {
     width: 300px;
   }
+  .flaged {
+    width: 320px;
+  }
   #countries2 {
     /* border: 3px solid green; */
     padding: 0 20px;
